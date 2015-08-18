@@ -16,8 +16,8 @@ requirejs.config({
 
 
 requirejs(
-  ["jquery", "firebase", "hbs", "bootstrap"], 
-  function($, _firebase, Handlebars, bootstrap) {
+  ["jquery", "firebase", "hbs", "bootstrap", "addFamily"], 
+  function($, _firebase, Handlebars, bootstrap, addFamily) {
 
 
 
@@ -39,14 +39,10 @@ requirejs(
   });
 
 
-  $("#addButton").click(function(){ 
-
-    addFamily.addFamily().then(function(newlyAddedSong){
-      console.log(newlyAddedSong);
-    }).fail(function(error){
-      console.log(error);
+    $('#addButton').click(function() {
+      console.log('click');
+      addFamily.addFamily();
     });
-  });
 
   $( document ).on( "click", "#deleteButton", function() {
     var titleKey = $(this).parent().attr("key");

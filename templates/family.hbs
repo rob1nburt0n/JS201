@@ -1,12 +1,12 @@
 {{#each family}}
     <div class="family-name" key="{{@key}}" name="{{name}}" age="{{age}}" gender="{{gender}}" skills="{{skills}}">
-      <button type="button" class="btn btn-default btn-sm" id="deleteButton">
-        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-      </button>
       
-   {{!-- <button id='deleteButton'>Delete</button> --}}
-      <h3>{{name}}</h3>
+    <h3>{{name}}</h3>
       <h4>{{age}},{{gender}},{{skills}}</h4>
+
+      <button type="button" class="btn btn-default btn-sm" id="deleteButton">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"> remove</span>
+      </button>
       
     </div>
   {{/each}}

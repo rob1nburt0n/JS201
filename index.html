@@ -13,10 +13,26 @@
 <body> 
 <h1>Family Members</h1> 
   <div id="familyNames"></div>
-  <div>
-    <button id="addButton">Add</button>
-  </div>
- 
+  <form>
+    <div class="form-group">
+      <label for="Name"><h3>Name</h3></label>
+      <input type="text" class="form-control" id="name" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <label for="Age"><h3>Age</h3></label>
+      <input type="text" class="form-control" id="age" placeholder="Age">
+    </div>
+    <div class="form-group">
+      <label for="Gender"><h3>Gender</h3></label>
+      <input type="text" class="form-control" id="gender" placeholder="Gender">
+    </div>
+    <div class="form-group">
+      <label for="Skills"><h3>Skills</h3></label>
+      <input type="text" class="form-control" id="skills" placeholder="Skills">
+    </div>
+   
+    <button type="button" class="btn btn-default" id="addButton"><h4>Add</h4></button>
+  </form> 
 <script data-main="javascripts/app.js" src="bower_components/requirejs/require.js"></script>
 </body>
-</html>
+</htm
